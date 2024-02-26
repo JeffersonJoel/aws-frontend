@@ -1,0 +1,12 @@
+<div *ngFor="let habitacion of Habitaciones">
+    <h2>{{ habitacion.TipoHabitacion }}</h2>
+    <p>Número de Habitación: {{ habitacion.NumeroHabitacion }}</p>
+    <p>Capacidad Máxima: {{ habitacion.CapacidadMaxima }}</p>
+    <p>Tipo de Camas: {{ habitacion.TipoCamas }}</p>
+    <p>Precio: {{ habitacion.Precio }}</p>
+    <p>Disponibilidad: {{ habitacion.Disponibilidad ? 'Disponible' : 'No Disponible' }}</p>
+    <p>Tipo de Alojamiento: {{ habitacion.TipoAlojamiento }}</p>
+    
+    <!-- Aquí puedes mostrar la imagen, ajusta la lógica según tus necesidades -->
+    <img *ngIf="habitacion.Imagen" [src]="url + 'get-imagenhabitacion/' + habitacion.Imagen" alt="Imagen de la Habitación">
+  </div>

@@ -1,0 +1,309 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header{
+  background-image: linear-gradient(
+      rgba(0,0,0,0.7),
+      rgba(0,0,0,0.7)),
+      url('../../../assets/img/2.jpeg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.header-content{
+  text-align: center;
+}
+
+.header-content h1{
+  font-size: 70px;
+  line-height: 80px;
+  color: #F9FAFC;
+  text-transform: uppercase;
+  margin-bottom: 35px; 
+}
+.header-content h1:hover{
+  color: #c0c2c2;
+  transform: scale(1.1); 
+  transition: transform 0.3s ease;
+}
+
+.header-content p{
+  font-size: 18px;
+  color: #c5c5c5;
+  padding: 0 250px;
+  margin-bottom: 25px;
+}
+
+.btn-1{
+  display: inline-block;
+  padding: 11px 35px;
+  background-color: #489ecf;
+  color: #edeef0;
+  text-transform: uppercase;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.btn-1:hover{
+  background-color: rgb(33, 76, 100);
+}
+
+/*INFORMACION HOTEL*/
+
+.hotel{
+  padding: 100px 0;
+  background-color: #e1e2e6;
+  position: relative;
+}
+
+.hotel-content{
+  text-align: center;
+}
+
+.hotel-content h2{
+  font-size: 55px;
+  line-height: 70px;
+  color: #323337;
+  text-transform: uppercase;
+  padding: 0 250px;
+  margin-bottom: 15px;
+}
+
+.hotel-content h2:hover{
+  color: #2581dd;
+  transform: scale(1.1); 
+  transition: transform 0.3s ease;
+}
+
+.txt-p{
+  font-size: 17px;
+  color: #414247;
+  padding: 0 250px;
+  margin-bottom: 35px;
+}
+
+.hotel-group{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.hotel-1{
+  padding: 0 50px;
+}
+
+.hotel-1 img{
+  width: 250px;
+  height: 300px;
+  border-radius: 30px;
+}
+
+.hotel-1 img:hover{
+  transform: scale(1.1); 
+  transition: transform 0.3s ease; 
+  filter: brightness(80%); 
+}
+
+.hotel-img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+.hotel-1 h3{
+  color: #f7f8fa;
+  font-size: 20px;
+  margin-bottom: 15px;
+  background-color: black;
+  padding: 10px 20px;
+}
+
+/*SERVICIOS*/
+.services{
+  background-image: linear-gradient(
+      rgba(0,0,0,0.7),
+      rgba(0,0,0,0.7)),
+      url('../../../assets/img/1.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px 0;
+}
+
+.services-content{
+  text-align: center;
+}
+
+.services-content h2{
+  font-size: 55px;
+  line-height: 70px;
+  color: #F9FAFC;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.services-content h2:hover{
+  color: #76a3c7;
+  transform: scale(1.1); 
+  transition: transform 0.3s ease;
+}
+
+.services-content p{
+  font-size: 17px;
+  color: #c5c5c5;
+  margin-bottom: 50px;
+  padding: 0 100px;
+}
+
+.services-group{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.services-1{
+  padding: 0 100px;
+}
+
+.services-1 img{
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.services-1 h3{
+  color: #eaccb3;
+  font-size: 18px;
+}
+
+/*GENERAL (MISION Y VISION)*/
+
+.general{
+  display: flex;
+}
+
+.general-1{
+  width: 50%;
+  padding: 100px 200px 100px 100px;
+  background-color: #e1e2e6;
+}
+
+.general-2{
+  background-image: url('../../../assets/img/hotel2.jpeg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+
+.general-3{
+  background-image: url('../../../assets/img/hotel1.jpeg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+
+h2{
+  font-size: 55px;
+  line-height: 70px;
+  color: #323337;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+p{
+  font-size: 17px;
+  color: #414247;
+  margin: 25px 0 45px 0;
+  text-align: justify;
+}
+
+.titulo2 {
+  margin-top: 0px;
+}
+
+.titulo2 h2 {
+  font-size: 50px;
+  line-height: 70px;
+  color: #323337;
+  text-align: center;
+  text-transform: uppercase;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.titulo2 h2:hover {
+  transform: scale(1.2);
+}
+
+.titulo2 h2::before,
+.titulo2 h2::after {
+  content: '';
+  height: 65px;
+  width: 50px;
+  background-image: url('https://png.pngtree.com/png-clipart/20231016/original/pngtree-white-christmas-snow-tree-white-christmas-tree-snow-tree-photo-png-image_13315971.png');
+  display: inline-block;
+  background-size: cover;
+  vertical-align: middle;
+}
+
+.titulo2 h2::before {
+  margin-right: 30px;
+}
+
+.titulo2 h2::after {
+  margin-left: 30px;
+}
+
+
+/*ACTIVIDADES*/
+.blog{
+  padding: 100px 0;
+  text-align: center;
+}
+
+.blog-content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-1{
+  padding: 15px 55px;
+}
+
+.blog-1 img{
+  width: 250px;
+  height: 330px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.blog-1 img:hover {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease; 
+  filter: brightness(80%); 
+}
+
+.blog-1  h3{
+  font-size: 25px;
+  color: #323337;
+}
+
+.blog-1 h3:hover {
+  color: #00e1ff;
+}
+

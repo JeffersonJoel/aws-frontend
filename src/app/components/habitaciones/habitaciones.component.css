@@ -1,0 +1,410 @@
+  /* Estilos para FECHAS */
+
+  .containerFecha {
+    padding: 1px ;
+    display: flex;
+    margin-top: 0px;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(230, 230, 230, 1);
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .containerFecha h2{
+    color: black;
+  }
+
+  .date-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+  }
+
+  .date-container h2 {
+    margin-right: 10px; /* Ajusta el valor según tus preferencias para el espacio entre el texto y el input */
+  }
+
+  .date-container input {
+    margin-right: 30px; /* Ajusta el valor según tus preferencias para el espacio entre el texto y el input */
+  font-size: 16px;
+  }
+
+
+  .containerFecha #btn-buscar {
+    /* Agrega estilos específicos para el botón dentro de .containerFecha */
+    background-color: white; /* Color de fondo */
+    color: black; /* Color del texto */
+    padding: 5px 10px; /* Padding (espaciado interno) */
+    font-size: 18px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    height: 40px;
+    width: 6%;
+    margin-left: 40px;
+    margin-top: 0px;
+    border-radius: 5px;
+    transform: translateY(33%);
+    border: none;
+  }
+
+
+  .containerFecha #btn-buscar:hover {
+    background-color: gray;
+    color: white;
+  }
+  /* Fin de estilo para FECHAS */
+
+
+
+
+
+
+
+
+
+
+
+  /* Contenedor principal que envuelve tanto las tarjetas de habitaciones como el resumen */
+  .containerPrincipal {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre las tarjetas de habitaciones y el resumen */
+  }
+
+
+
+
+
+
+
+
+  /* FILTRO */
+  .filtro, .tarjetas, .resumen {
+    padding: 0px;
+  }
+  .filtro {
+    display: flex;
+    background-color: rgba(244, 244, 244, 1);
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: left;
+    width: 17%;
+    padding: 30px;
+  }
+
+  /* espacio entre los elementos */
+  .filtro > * {
+    margin-bottom: 10px;
+    
+  }
+
+  .filtro input[type="number"] {
+    font-size: 12px; /* Ajusta según tus preferencias */
+    margin-right: 20px; /* Separación entre el checkbox y el texto */
+    padding-left: 5px; /* Ajusta según tus preferencias */
+    padding-right: 5px; /* Ajusta según tus preferencias */
+    width: 40px;
+  }
+
+  .precio-range{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .precio-range #minPrecio,#maxPrecio{
+    width: 45px;
+  }
+
+  .tipo-habitacion-checkboxes,
+  .tipo-alojamiento-checkboxes,
+  .tipo-cama-checkboxes {
+    display: flex;
+    flex-direction: column; /* Alinea los checkboxes en una columna vertical */
+  }
+
+
+
+  .tipo-habitacion-checkboxes label,
+  .tipo-alojamiento-checkboxes label,
+  .tipo-cama-checkboxes label {
+    margin-bottom: 10px; /* Ajusta según sea necesario para agregar espacio entre los checkboxes */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* HABITACIONES */
+  .habitaciones{
+    width: 100%;
+  }
+  .tarjetas{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec; /* Color de fondo del cuadro */
+    border-radius: 15px; /* Bordes circulares */
+    box-shadow: 0 0 10px #16263a; /* Sombra con suavidad */
+    padding: 20px;
+    margin: 30px auto; /* Centrar horizontalmente y agregar margen arriba/abajo */
+    /* border: 1px solid red; */
+    width: 710px;
+  }
+  .habitaciones .tarjetas .informacion {
+    max-width: 100%; /* Limita el ancho del texto para evitar que se desborde */
+    overflow: hidden; /* Oculta cualquier texto que exceda el ancho del contenedor */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos (...) si el texto es demasiado largo para ajustarse */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    width: 400px;
+  }
+
+
+  .habitacionImagen img {
+    max-width: 100%;
+    width: 350px; /* Ajusta el valor según el ancho deseado */
+    height: auto; /* Ajusta el valor según el alto deseado */
+    margin-right: 100px;
+    border-radius: 55px;
+    align-items: center;
+  }
+  
+  .informacion p,
+  .informacion h3,
+  .split-info {
+    margin-top: 0px ;
+    margin-bottom: 5px; 
+  }
+  
+#desayuno{
+  margin-top: 0px;
+  display: flex; /* Usa flexbox para alinear horizontalmente */
+    align-items: center; /* Alinea verticalmente los elementos hijos */
+}
+  .split-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  .left-info {
+    float: left;
+  }
+  .checkbox-container {
+    margin-right: 5px; /* Ajusta el margen derecho entre el checkbox y el texto */
+    margin-top: 4px;
+  }
+  
+  .infodsy {
+    margin-top: 0px; /* Elimina el margen superior del texto */
+  }
+
+  .right-info {
+    float: right;
+    margin-top: 0px;
+    margin-left: 50px
+  }
+  .info,
+  .parametros
+  {
+    display: inline-block; /* Cambiar a bloque para que los elementos estén uno debajo del otro */
+    margin-bottom: 0px; /* Agregar espacio entre los elementos */
+  }
+
+  .info {
+    margin-right: 42px; /* Anula el margen izquierdo para los elementos .info dentro de .right-info */
+}
+  .parametros {
+    font-size: 20px; /* Ajusta según tus preferencias */
+    text-align: center;
+    width: 50px;
+    height: 30px;
+    margin-right: 30px;
+    }
+  
+  .tarjetas button {
+    background-color: #232f3e; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    padding: 10px 20px; /* Ajusta el espaciado interno */
+    font-size: 18px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 10px;
+    border: none;
+    display: block; /* Muestra el botón en línea */
+    margin: 10px auto; /* Centrar horizontalmente con margen superior e inferior de 10px */
+    white-space: nowrap;
+    
+  }
+  
+  .tarjetas button:hover {
+    background-color: #274b77;
+    color: white;
+  
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Estilos para el contenedor de resumen */
+  .resumen {
+    background-color: rgba(244, 244, 244, 1);
+    padding: 26px;
+    text-align: center; /* Centra el contenido horizontalmente */ 
+    position: relative;
+  }
+
+  /* Establece un ancho máximo para las imágenes dentro del contenedor de resumen */
+  .resumen img {
+    max-width: 100%;
+  }
+  .carrito { /* Ajusta según sea necesario para crear espacio entre la línea y el contenido */
+    margin-bottom: 0px; /* Ajusta según sea necesario para crear espacio entre los elementos <div class="carrito"> */
+  }
+  /* Estilos para los elementos dentro del contenedor de resumen */
+  .resumen .carrito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resumen .carrito img {
+    width: 150px; /* Ajusta el tamaño de la imagen según tus preferencias */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-bottom: 0px; /* Ajusta el espacio entre la imagen y el título */
+    border-radius: 15px;
+  }
+  .linea {
+    border-bottom: 1px solid #9b9b9b; /* Agrega un borde inferior a cada elemento <div class="carrito"> */
+    box-sizing: border-box; /* Incluye el borde en el ancho total del elemento */
+    width: calc(100% + 52px); /* Ajusta el ancho de la línea al 100% del contenedor más el doble del ancho del borde */
+    margin-left: -26px; /* Compensa el margen lateral para que la línea se ajuste al contenedor */
+    margin-right: -26px; /* Compensa el margen lateral para que la línea se ajuste al contenedor */
+    margin-bottom: 0px;
+  }
+  .resumen .carrito h3 {
+    margin-top: 15px;
+    max-width: 200px;
+    margin-bottom: 0px; /* Ajusta el espacio entre el título y el precio */
+  }
+
+  .resumen .info-reserva{
+    margin-top: -15px;
+    margin-bottom: 0px; /* Elimina el margen inferior para evitar espacio adicional */
+  }
+
+  /* Estilos para el botón dentro del contenedor de resumen */
+  #btn-reservar {
+    background-color: #232f3e; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    padding: 10px 20px; /* Ajusta el espaciado interno */
+    font-size: 18px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 10px;
+    border: none;
+    display: inline-block; /* Muestra el botón en línea */
+    margin: 10px; /* Ajusta el margen según sea necesario */
+    white-space: nowrap;
+  }
+
+  #btn-reservar:hover {
+    background-color: #274b77;
+    color: white;
+  }
+  .fas.fa-shopping-cart {
+    font-size: 100px; /* Tamaño deseado del icono */
+    width: 100%; /* Ancho del icono al 100% del contenedor */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .clearfix{
+    float: none;
+    clear: both;
+  }
+
+
+
+
+
+
+
+/* Estilo del checkbox */
+.filtro input[type="checkbox"] {
+  width: 20px; /* Ancho del checkbox */
+  height: 20px; /* Altura del checkbox */
+  background-color: #c40808 !important; /* Color de fondo predeterminado */
+  transition: background-color 0.3s ease; /* Efecto de transición */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el checkbox */
+}
+
+/* Cambia el color del checkbox al pasar el mouse */
+.filtro input[type="checkbox"]:hover {
+  background-color: rgb(19, 153, 187) !important; /* Color de fondo al pasar el mouse */
+}
+
+/* Cambia el estilo del checkbox cuando está marcado */
+.filtro input[type="checkbox"]:checked {
+  background-color: #b118c5 !important; /* Color de fondo cuando está marcado */
+}
+
+
+
+/* Cambia el estilo del checkbox para que se vea como un interruptor */
+.habitaciones input[type="checkbox"] {
+  -webkit-appearance: none; /* Elimina el estilo predeterminado del checkbox en WebKit */
+  -moz-appearance: none; /* Elimina el estilo predeterminado del checkbox en Firefox */
+  appearance: none; /* Elimina el estilo predeterminado del checkbox */
+  width: 40px; /* Ancho del interruptor */
+  height: 20px; /* Altura del interruptor */
+  background-color: #ccc; /* Color de fondo del interruptor */
+  border-radius: 10px; /* Borde redondeado */
+  position: relative;
+}
+.habitaciones input[type="checkbox"]:checked {
+  background-color: #274b77; /* Cambia el color de fondo cuando está marcado */
+}
+/* Estilo del círculo deslizante */
+.habitaciones input[type="checkbox"]::before {
+  content: '';
+  position: absolute;
+  width: 18px; /* Diámetro del círculo */
+  height: 18px; /* Diámetro del círculo */
+  background-color: white; /* Color del círculo */
+  border-radius: 50%; /* Hace que el círculo sea redondeado */
+  top: 1px; /* Posición vertical del círculo */
+  left: 1px; /* Posición horizontal del círculo */
+  transition: 0.4s; /* Efecto de transición */
+}
+
+/* Cambia el estilo del checkbox cuando está marcado */
+.habitaciones input[type="checkbox"]:checked::before {
+  transform: translateX(20px); /* Mueve el círculo al final del interruptor */
+}

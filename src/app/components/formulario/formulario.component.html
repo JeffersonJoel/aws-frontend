@@ -1,0 +1,86 @@
+<div class="fondoFormulario">
+    
+    
+    
+<div class="containerPrincipal">
+    
+    
+<div class="contenido">
+    <div class="tituloFormulario">
+    <h2>Datos Personales  </h2>
+    </div>
+    
+
+    <div class="formularios">
+    
+    <!-- <p>Por favor completa el siguiente formario para proceder con la reservación</p>-->
+     <form  #formulario="ngForm" (ngSubmit)="enviarformulario()">
+        <p></p>
+        <label for="nombre"><strong>Nombres</strong></label> 
+        <p>
+            <input type="text" id="txtNombresCliente" name="nombres" [(ngModel)]="nuevoCliente.Nombres" required #nombresField="ngModel"/>
+            <span *ngIf="nombresField.invalid && (nombresField.dirty || nombresField.touched)" class="error-message"> *Campo obligatorio</span>
+        </p>
+        <p></p>
+        <label for="apellido"><strong>Apellidos</strong></label>
+        <p>
+            <input type="text" id="txtApellidosCliente" name="apellidos" [(ngModel)]="nuevoCliente.Apellidos" required #apellidosField="ngModel"/>
+            <span *ngIf="apellidosField.invalid && (apellidosField.dirty || apellidosField.touched)" class="error-message"> *Campo obligatorio</span>
+        </p>
+        <p></p>
+        <label for="identificacion"><strong>Cédula o pasaporte</strong></label>
+        <p>
+            <input type="text" id="txtIdentificacionCliente" name="identificacion" [(ngModel)]="nuevoCliente.Cedula" required #identificacionField="ngModel"/>
+            <span *ngIf="identificacionField.invalid && (identificacionField.dirty || identificacionField.touched)" class="error-message"> *Campo obligatorio</span>
+        </p>
+        <p></p>
+        <label for="direccion"><strong>Dirección</strong></label>
+        <p>
+            <input type="text" id="txtDireccionCliente" name="direccion" [(ngModel)]="nuevoCliente.Direccion" required #direccionField="ngModel"/>
+            <span *ngIf="direccionField.invalid && (direccionField.dirty || direccionField.touched)" class="error-message"> *Campo obligatorio</span>
+        </p>
+        <p></p>
+        <label for="telefono"><strong>Teléfono o celular</strong></label>
+        <p>
+            <input type="text" id="txtTelefonoCliente" name="telefono" [(ngModel)]="nuevoCliente.Telefono" required #telefonoField="ngModel"/>
+            <span *ngIf="telefonoField.invalid && (telefonoField.dirty || telefonoField.touched)" class="error-message"> *Campo obligatorio</span>
+        </p>
+        <p></p>
+        <label for="email"><strong>Email</strong></label>
+        <p>
+            <input type="text" id="txtEmailCliente" name="email" [(ngModel)]="nuevoCliente.Email" required #emailField="ngModel"/>
+            <span *ngIf="emailField.invalid && (emailField.dirty || emailField.touched)" class="error-message"> *Campo obligatorio</span>
+        </p>
+        <p>
+            <button id="btn-formulario" type="submit" [disabled]="formulario.invalid">Continuar con el pago</button>
+        </p>
+        </form> 
+
+    </div>
+</div>
+<div class="resumen">
+    <div class="icono-carrito" style="margin-bottom: 25px;">
+      <i class="fas fa-shopping-cart" style="font-size: 50px"></i>
+    </div>
+
+    <div class="linea"></div>
+
+    <div *ngFor="let reserva of carrito" class="carrito">
+      <!-- Título arriba de la imagen -->
+      <h3>{{ reserva.tipoAlojamiento }} {{ reserva.tipoHabitacion }} para {{ reserva.numAdultos }} Adultos y {{ reserva.numNinos }} Niños</h3>
+      <img [src]="url + 'get-imagenhabitacion/' + reserva.imagen" alt="Imagen de Habitación">
+      <div class="info-reserva">
+        <!-- Precio abajo de la imagen -->
+        <h1>${{ reserva.precioTotal }}</h1>
+      </div>
+      <div class="linea"></div>
+
+    </div>
+    <div class="subtotal">
+      <p>Subtotal<p>
+      <h3>US${{ calcularSubtotal() }}</h3> <!-- Aquí muestra el subtotal calculado -->
+    </div>
+
+  </div>
+</div>
+</div>

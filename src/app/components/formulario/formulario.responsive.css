@@ -1,0 +1,319 @@
+@media only screen and (min-width: 901px) and (max-width: 1280px){
+  
+    .formularios {
+      width: 400px;
+    }
+    .formularios form{
+        margin-top: -10px;    
+    }
+
+    .formularios form label {
+        margin-bottom: -10px;
+        font-size: 14px;
+    }
+    
+    .formularios form input {
+        width: 70%;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .formularios form button {
+        padding: 10px 20px; /* Ajusta el espaciado interno */
+        font-size: 15px; /* Tamaño de la fuente */
+        border-radius: 10px;
+        border: none;
+        margin: 10px; /* Ajusta el margen según sea necesario */
+    }
+    
+    .tituloFormulario {
+        padding: 10px;
+        margin-top: 40px;
+        border: 1px solid rgb(155, 155, 155);
+        width: 420px;
+      }
+      
+      .tituloFormulario h2 {
+        margin: 0px;
+        font-size: 20px;
+    }
+    
+    .fondoFormulario{
+      background: #fff /* Degradado de color de fondo */
+    }
+    
+    
+    /* Estilos para el contenedor de resumen */
+    .resumen {
+        background-color: rgba(244, 244, 244, 1);
+        padding: 26px;
+      }
+
+      .resumen img {
+        max-width: 90%;
+      }
+      .carrito { /* Ajusta según sea necesario para crear espacio entre la línea y el contenido */
+        margin-bottom: 0px; /* Ajusta según sea necesario para crear espacio entre los elementos <div class="carrito"> */
+      }
+      /* Estilos para los elementos dentro del contenedor de resumen */
+
+      .resumen .carrito img {
+        width: 150px; /* Ajusta el tamaño de la imagen según tus preferencias */
+        height: auto; /* Mantiene la proporción de la imagen */
+        margin-bottom: 0px; /* Ajusta el espacio entre la imagen y el título */
+        border-radius: 15px;
+      }
+      .linea {
+        margin-left: -26px; /* Compensa el margen lateral para que la línea se ajuste al contenedor */
+        margin-right: -26px; /* Compensa el margen lateral para que la línea se ajuste al contenedor */
+        margin-bottom: 0px;
+      }
+
+      .resumen .carrito h3 {
+        margin-top: 15px;
+        max-width: 200px;
+        margin-bottom: 0px; /* Ajusta el espacio entre el título y el precio */
+        font-size: 14px;
+      }
+
+      h1{
+        font-size: 14px;
+        margin-top: 15px;
+      }
+      .resumen p{
+        font-size: 14px;
+      }
+    
+      .subtotal h3{
+     font-size: 14px;
+      }
+
+     .subtotal p{
+     font-size: 14px;
+      }
+
+      /* Estilos para el botón dentro del contenedor de resumen */
+      #btn-reservar {
+        padding: 10px 20px; /* Ajusta el espaciado interno */
+        font-size: 15px; /* Tamaño de la fuente */
+        border-radius: 10px;
+        margin: 10px; /* Ajusta el margen según sea necesario */
+      }
+}
+
+/*----------------------------601 a 900----------------------------------------*/
+
+@media only screen and (min-width: 601px) and (max-width: 900px){
+    .formularios {
+        width: 350px;
+      }
+
+      .formularios form{
+        margin-top: -15px;
+        }
+  
+      .formularios form label {
+          margin-bottom: -10px;
+          font-size: 12px;
+      }
+      
+      .formularios form input {
+          width: 60%;
+          padding: 0px;
+          margin-bottom: 5px;
+          height: 25px;
+      }
+      
+      .formularios form button {
+          padding: 10px 20px; /* Ajusta el espaciado interno */
+          font-size: 12px; /* Tamaño de la fuente */
+          border-radius: 10px;
+          border: none;
+          margin: 10px; /* Ajusta el margen según sea necesario */
+      }
+      
+      .tituloFormulario {
+          padding: 10px;
+          margin-top: 25px;
+          border: 1px solid rgb(155, 155, 155);
+          width: 370px;
+        }
+        
+        .tituloFormulario h2 {
+          margin: 0px;
+          font-size: 16px;
+      }
+      
+      .fondoFormulario{
+        background: #fff /* Degradado de color de fondo */
+      }
+      
+      
+      /* Estilos para el contenedor de resumen */
+      .resumen {
+          background-color: rgba(244, 244, 244, 1);
+          padding: 26px;
+        }
+  
+        .resumen img {
+          max-width: 80%;
+        }
+        .carrito { /* Ajusta según sea necesario para crear espacio entre la línea y el contenido */
+          margin-bottom: 0px; /* Ajusta según sea necesario para crear espacio entre los elementos <div class="carrito"> */
+        }
+        /* Estilos para los elementos dentro del contenedor de resumen */
+  
+        .resumen .carrito img {
+          width: 120px; /* Ajusta el tamaño de la imagen según tus preferencias */
+          height: auto; /* Mantiene la proporción de la imagen */
+          margin-bottom: 0px; /* Ajusta el espacio entre la imagen y el título */
+          border-radius: 15px;
+        }
+        .linea {
+          margin-left: -26px; /* Compensa el margen lateral para que la línea se ajuste al contenedor */
+          margin-right: -26px; /* Compensa el margen lateral para que la línea se ajuste al contenedor */
+          margin-bottom: 0px;
+        }
+  
+        .resumen .carrito h3 {
+          margin-top: 15px;
+          max-width: 200px;
+          margin-bottom: 0px; /* Ajusta el espacio entre el título y el precio */
+          font-size: 12px;
+        }
+  
+        h1{
+          font-size: 14px;
+          margin-top: 17px;
+        }
+        .resumen p{
+          font-size: 12px;
+        }
+      
+        .subtotal h3{
+       font-size: 12px;
+        }
+  
+       .subtotal p{
+       font-size: 12px;
+        }
+  
+        /* Estilos para el botón dentro del contenedor de resumen */
+        #btn-reservar {
+          padding: 10px 20px; /* Ajusta el espaciado interno */
+          font-size: 12px; /* Tamaño de la fuente */
+          border-radius: 10px;
+          margin: 10px; /* Ajusta el margen según sea necesario */
+        }
+
+}
+
+@media only screen and (max-width: 600px){
+    
+    .formularios {
+        width: 200px;
+      }
+  
+      .formularios form{
+      margin-top: -25px;
+      
+      }
+
+      .formularios form label {
+          margin-bottom: -10px;
+          font-size: 8px;
+          margin-top: -10px;
+      }
+      
+      .formularios form input {
+          width: 70%;
+          padding: 0px;
+          margin-bottom: 5px;
+          height: 18px;
+          font-size: 8px;
+      }
+      
+      .formularios form button {
+          padding: 10px 10px; /* Ajusta el espaciado interno */
+          font-size: 8px; /* Tamaño de la fuente */
+          border-radius: 10px;
+          border: none;
+          margin-top: -10px; /* Ajusta el margen según sea necesario */
+          margin-bottom: -20px;
+        }
+      
+      .tituloFormulario {
+          padding: 10px;
+          margin-top: 10px; /*altura entre el encabezado*/
+          border: 1px solid rgb(155, 155, 155);
+          width: 220px;
+        }
+        
+        .tituloFormulario h2 {
+          margin: 0px;
+          font-size: 10px;
+      }
+      
+      .fondoFormulario{
+        background: #fff /* Degradado de color de fondo */
+      }
+      
+      
+      /* Estilos para el contenedor de resumen */
+      .resumen {
+          background-color: rgba(244, 244, 244, 1);
+          padding: 26px;
+        }
+  
+        .resumen img {
+          max-width: 90%;
+        }
+        .carrito { /* Ajusta según sea necesario para crear espacio entre la línea y el contenido */
+          margin-bottom: 0px; /* Ajusta según sea necesario para crear espacio entre los elementos <div class="carrito"> */
+        }
+        /* Estilos para los elementos dentro del contenedor de resumen */
+  
+        .resumen .carrito img {
+          width: 120px; /* Ajusta el tamaño de la imagen según tus preferencias */
+          height: auto; /* Mantiene la proporción de la imagen */
+          margin-bottom: 0px; /* Ajusta el espacio entre la imagen y el título */
+          border-radius: 15px;
+        }
+        .linea {
+          margin-left: -26px; /* Compensa el margen lateral para que la línea se ajuste al contenedor */
+          margin-right: -26px; /* Compensa el margen lateral para que la línea se ajuste al contenedor */
+          margin-bottom: 0px;
+        }
+  
+        .resumen .carrito h3 {
+          margin-top: 15px;
+          max-width: 200px;
+          margin-bottom: 10px; /* Ajusta el espacio entre el título y el precio */
+          font-size: 8px;
+        }
+  
+        h1{
+          font-size: 10px;
+          margin-top: 17px;
+        }
+        .resumen p{
+          font-size: 8px;
+        }
+      
+        .subtotal h3{
+       font-size: 8px;
+        }
+  
+       .subtotal p{
+       font-size: 8px;
+        }
+  
+        /* Estilos para el botón dentro del contenedor de resumen */
+        #btn-reservar {
+          padding: 10px 20px; /* Ajusta el espaciado interno */
+          font-size: 8px; /* Tamaño de la fuente */
+          border-radius: 10px;
+          margin: 10px; /* Ajusta el margen según sea necesario */
+        }
+
+}

@@ -1,0 +1,75 @@
+<div class="clearfix"></div>
+<div class="menu">
+  <div id="logo">
+    <img width="60 px"
+    src="https://images.vexels.com/media/users/3/261410/isolated/preview/173ad4ca662f80dabcc79ef41bbd1086-icono-de-copo-de-nieve-bota-nico-de-invierno.png"
+    alt="">
+  <h1>Hotel Copo de Nieve</h1>
+  </div>
+  <div id="opciones">
+    <ul>
+      <li><a [routerLink]="['/inicio']">Home</a></li>
+      <li><a [routerLink]="['/habitaciones']">Habitaciones</a></li>
+      <li><a [routerLink]="['/buscar']">Buscar Reservas</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="clearfix"></div>
+<!-- Cuadro de búsqueda -->
+<section id="content">
+  <router-outlet></router-outlet>
+</section>
+
+<div class="clearfix"></div>
+<footer id="footer">
+  <div class="wrap">
+    <div id="menu_footer">
+      <h5>INFORMACIÓN</h5>
+      <span id="servicios">
+        <h6>Servicios Adicionales</h6>
+        <p>
+          Wi-Fi gratuito<br>
+          Piscina y spa<br>
+          Servicio de habitaciones<br>
+          Restaurante con servicio de buffet<br>
+          Estacionamiento gratuito<br>
+        </p>
+        <h6>Telefono</h6>
+        <p>
+          02596684752
+        </p>
+        <h6>Correo electronico</h6>
+        <p>
+          grupo6.ISW2.epn.edu.ec
+        </p>
+      </span>
+    </div>
+    <div id="location">
+      <h5>UBICACIÓN</h5>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15959.18896031533!2d-78.50448012126016!3d-0.18625128925457735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a7ce9ba8755%3A0x755f2bd0d36e70a7!2sLa%20Carolina%2C%20Quito!5e0!3m2!1ses!2sec!4v1700570529144!5m2!1ses!2sec"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div id="info">
+      <h5>SÍGUENOS</h5>
+      <P>
+        <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img width="40px"
+            src="https://cdn.pixabay.com/photo/2021/12/10/16/37/facebook-6860914_1280.png" alt=""></a>
+        <a href="https://www.instagram.com/" target="_blank"><img width="40px"
+            src="https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338392_1280.png" alt=""></a>
+        <a href="https://web.telegram.org/k/" target="_blank"><img width="40px"
+            src="https://cdn.icon-icons.com/icons2/3053/PNG/512/telegram_macos_bigsur_icon_189662.png" alt=""></a>
+        <br><br><br>
+        <br>
+        Copyright &copy; 2023 Vida & Armonia | Hotel copo de nieve
+        <br>
+        Designed by
+        <a href="maito:grupo6.ISW2.epn.edu.ec?Subject=Ayuda...!" target="_blank">Grupo 6</a>
+      </P>
+    </div>
+  </div>
+</footer>
+<div class="clearfix"></div>

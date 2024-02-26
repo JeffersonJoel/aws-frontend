@@ -1,0 +1,271 @@
+@media only screen and (min-width: 901px) and (max-width: 1280px){
+
+    .container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        border-radius: 5px;
+        display: block;
+        text-align: center;
+    }
+
+    .container h1{
+        font-size: 20px;
+    }
+      
+      .form-group {
+        margin-bottom: 18px;
+      }
+      
+      .btn-primary {
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 13px;
+      }
+
+
+      .form-group{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .form-group label{
+        margin-bottom: 5px;
+        font-size: 15px;
+      }
+
+      .form-group input{
+        width: 150px;
+        display: flex;
+        margin: 0 auto;
+        font-size: 15px;
+      }
+
+
+
+      /*-------------------------------------*/
+      
+      .reservacion {
+        border-radius: 5px;
+        padding: 20px;
+        max-width: 400px; /* Ancho máximo del contenedor */
+      }
+      
+      #info h2{
+        font-size: 18px;
+        margin-top: 0;
+        color: #007bff; /* Color del título */
+      }
+      
+      #info h4,
+      #reserva h4{
+        margin: 10px 0;
+        font-size: 15px;
+      }
+
+     .reserva-precios h4{
+      font-size: 15px;
+     }
+
+     #precio h3{
+      font-size: 15px;
+     }
+          
+   #reserva img{
+    width: 270px;
+    height: auto; 
+    border-radius: 28px;
+    margin-left: 70px;
+    margin-bottom: 10px;
+   }
+}
+
+
+
+@media only screen and (min-width: 601px) and (max-width: 900px){
+
+    .container {
+        max-width: 350px;
+        height: 230px;
+        padding: 3px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        display: block;
+        text-align: center;
+    }
+
+    .container h1{
+        font-size: 14px;
+    }
+      
+      .form-group {
+        margin-bottom: 18px;
+      }
+      
+      .btn-primary {
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 11px;
+      }
+
+
+      .form-group{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .form-group label{
+        margin-bottom: 5px;
+        font-size: 12px;
+        
+     
+      }
+
+      .form-group input{
+        width: 140px;
+        display: flex;
+        margin: 0 auto;
+        font-size: 12px;
+      }
+
+
+
+      /*-------------------------------------*/
+      
+      .reservacion {
+        border-radius: 5px;
+        padding: 20px;
+        max-width: 320px; /* Ancho máximo del contenedor */
+      }
+      
+
+      #info h2{
+        font-size: 14px;
+        margin-top: 0;
+        color: #007bff; /* Color del título */
+      }
+      
+      #info h4,
+      #reserva h4{
+        margin: 8px 0;
+        font-size: 12px;
+      }
+
+     .reserva-precios h4{
+      font-size: 12px;
+      margin-bottom: 10px;
+     }
+
+     #precio h3{
+      font-size: 12px;
+     }
+      
+
+      #reserva img{
+        width: 220px;
+        height: auto; 
+        border-radius: 28px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+       }
+
+}
+
+
+@media only screen and (max-width: 600px){
+    .container {
+        max-width: 270px;
+        height: 200px;
+        padding: 3px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        display: block;
+        text-align: center;
+    }
+
+    .container h1{
+        font-size: 11px;
+    }
+      
+      .form-group {
+        margin-bottom: 18px;
+      }
+      
+      .btn-primary {
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 9px;
+      }
+
+
+      .form-group{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .form-group label{
+        margin-bottom: 5px;
+        font-size: 9px;
+        
+     
+      }
+
+      .form-group input{
+        width: 120px;
+        height: 12px;
+        display: flex;
+        margin: 0 auto;
+        font-size: 8px;
+      }
+
+
+
+      /*-------------------------------------*/
+      
+      .reservacion {
+        border-radius: 5px;
+        padding: 20px;
+        max-width: 240px; /* Ancho máximo del contenedor */
+      }
+      
+      
+      #info h2{
+        font-size: 10px;
+        margin-top: 0;
+        color: #007bff; /* Color del título */
+      }
+      
+      #info h4,
+      #reserva h4{
+        margin: 5px 0;
+        font-size: 8px;
+      }
+
+     .reserva-precios h4{
+      font-size: 8px;
+      margin-bottom: 10px; 
+    }
+
+     #precio h3{
+      font-size: 8px;
+     }
+      
+     #reserva img{
+      width: 150px;
+      height: auto; 
+      border-radius: 28px;
+      margin-left: 45px;
+      margin-bottom: 10px;
+     }
+
+}

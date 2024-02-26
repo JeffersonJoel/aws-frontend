@@ -1,0 +1,135 @@
+/* Estilos generales */
+
+body {
+    margin: 0px;
+  }
+  
+  .finalizar {
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    background: #ECE9E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  }
+ 
+  .fa-solid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+    
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+  }
+  
+  h3 {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  /* Estilos para cada sección */
+  
+  #direccion {
+    border-bottom: 3px dotted  rgb(132, 125, 125);
+    border-top: 10px solid #ddd;
+    padding: 10px;
+  }
+  
+  
+  
+  #reservacion {
+    /* border: 1px solid #ddd; */
+    padding: 10px;
+    border-bottom: 3px dotted  rgb(132, 125, 125);
+  }
+  
+  .reserva-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.reserva-info {
+    flex: 1;
+    margin-left: 30px;
+    
+}
+
+.reserva-precios {
+    text-align: right;
+    margin-top: -240px;
+}
+
+
+#pago {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+  
+  #pago h3 {
+    text-align: right;
+  }
+  
+  /* Botones */
+  
+  
+   button {
+    width: 200px;
+    border-radius: 30px;
+    background-color: #f9c700;
+    color: #00457c;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 10px 40px;
+    border: 1px solid #ddd;
+    cursor: pointer;   
+  }
+  
+  button:hover {
+    background-color: #f7b700;
+  }
+ 
+  .fa-brands.fa-cc-paypal {
+    font-size: 10px;
+  } 
+
+ 
+
+.fa-brands.fa-cc-paypal {
+  font-size: 60px; /* Adjust size as needed */
+}
+
+  /* Imagen */
+  
+  #reservacion img {
+    width: 300px;
+  }
+  
+  .paypal-button-container {
+    width: 400px; /* Puedes ajustar el ancho según tus necesidades */
+    
+}
+.paypal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

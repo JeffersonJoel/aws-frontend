@@ -1,0 +1,51 @@
+<div class="finalizar">
+    
+    <h1>FINALIZAR RESERVA</h1>
+    <i class="fa-solid fa-hotel" style="color: black"></i>
+    <div id="direccion">
+        <h2>1. Datos Personales</h2>
+        <h4>Nombres: {{ nuevoCliente.Nombres }}</h4>
+        <h4>Apellidos: {{ nuevoCliente.Apellidos }}</h4>
+        <h4>Cédula: {{ nuevoCliente.Cedula }}</h4>
+        <h4>Email: {{ nuevoCliente.Email }}</h4>
+        <h4>Teléfono: {{ nuevoCliente.Telefono }}</h4>
+        <h4>Dirección: {{ nuevoCliente.Direccion }}</h4>
+    </div>
+    
+    <div id="reservacion">
+        <div *ngFor="let reserva of carrito" class="reserva-item">
+            <img [src]="url + 'get-imagenhabitacion/' + reserva.imagen" alt="Imagen de Habitación">
+            
+            <div class="reserva-info">
+                <h4>Tipo de habitación: {{ reserva.tipoHabitacion }}</h4>
+                <h4>Tipo de alojamiento: {{ reserva.tipoAlojamiento }}</h4>
+                <h4>Número de adultos: {{ reserva.numAdultos }}</h4>
+                <h4>Número de niños: {{ reserva.numNinos }}</h4>
+                <h4>Fecha de check-in: {{ reserva.fechaCheckIn }}</h4>
+                <h4>Fecha de check-out: {{ reserva.fechaCheckOut }}</h4>
+                <h4>Desayuno incluido: {{ reserva.desayuno ? 'Sí' : 'No' }}</h4>
+                <h4>Precio por noche: {{ reserva.preciopornoche }}</h4>
+                <h4>Número de noches: {{ reserva.n_noches }}</h4>
+            </div>
+    
+            <div class="reserva-precios">
+                <h4>Desayuno: $7.00</h4>
+                <h4>Precio por {{ reserva.n_noches }} noches: ${{ calcularprecio_noches(reserva.n_noches,reserva.preciopornoche)}}</h4>
+                <h4>Subtotal: ${{ reserva.precioTotal }}</h4>
+            </div>
+        </div>
+    </div>
+    
+    <div id="pago">
+        <h3>Subtotal de la reserva: {{subtotal}}</h3>
+        <h3>12% del iva: {{iva}}</h3>
+        <h3>Total de la reserva: {{precio}}</h3>
+          
+    </div>
+
+    <div class="paypal">
+    <div class="paypal-button-container">
+        <ngx-paypal [config]="payPalConfig" class="payp"></ngx-paypal>
+      </div>
+    </div>
+</div>

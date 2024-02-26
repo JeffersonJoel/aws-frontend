@@ -1,0 +1,157 @@
+
+.containerPrincipal {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre las tarjetas de habitaciones y el resumen */
+    
+  }
+
+
+.contenido{
+    align-items: center;
+    width: 100%;
+}
+
+.formularios {
+  width: 500px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid rgb(155, 155, 155);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 100px;
+  overflow: hidden; /* Asegura que el contenido del formulario no se desborde */
+  backdrop-filter: blur(10px); /* Aplica un desenfoque de 10px al fondo detrás del formulario */
+}
+.formularios form {
+    text-align: center;
+}
+
+.formularios form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formularios form input {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.formularios form button {
+    background-color: #232f3e; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    padding: 10px 20px; /* Ajusta el espaciado interno */
+    font-size: 18px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 10px;
+    border: none;
+    display: inline-block; /* Muestra el botón en línea */
+    margin: 10px; /* Ajusta el margen según sea necesario */
+    white-space: nowrap;
+}
+
+.formularios form button:hover{
+    background-color: #274b77;
+    color: white;
+}
+
+.tituloFormulario {
+  border-top-left-radius:10px ;
+  border-top-right-radius:10px ;
+  margin: auto;
+  text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+    border: 1px solid rgb(155, 155, 155);
+    border-bottom: none;
+    width: 520px;
+  }
+  
+  .tituloFormulario h2 {
+    margin: 0px;
+   background-position: center;
+}
+
+.fondoFormulario{
+  background: #fff /* Degradado de color de fondo */
+
+}
+
+
+
+
+
+
+
+
+/* Estilos para el contenedor de resumen */
+.resumen {
+    background-color: rgba(244, 244, 244, 1);
+    padding: 26px;
+    text-align: center; /* Centra el contenido horizontalmente */ 
+    position: relative;
+
+  }
+
+  /* Establece un ancho máximo para las imágenes dentro del contenedor de resumen */
+  .resumen img {
+    max-width: 100%;
+  }
+  .carrito { /* Ajusta según sea necesario para crear espacio entre la línea y el contenido */
+    margin-bottom: 0px; /* Ajusta según sea necesario para crear espacio entre los elementos <div class="carrito"> */
+  }
+  /* Estilos para los elementos dentro del contenedor de resumen */
+  .resumen .carrito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resumen .carrito img {
+    width: 150px; /* Ajusta el tamaño de la imagen según tus preferencias */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-bottom: 0px; /* Ajusta el espacio entre la imagen y el título */
+    border-radius: 15px;
+  }
+  .linea {
+    border-bottom: 1px solid #9b9b9b; /* Agrega un borde inferior a cada elemento <div class="carrito"> */
+    box-sizing: border-box; /* Incluye el borde en el ancho total del elemento */
+    width: calc(100% + 52px); /* Ajusta el ancho de la línea al 100% del contenedor más el doble del ancho del borde */
+    margin-left: -26px; /* Compensa el margen lateral para que la línea se ajuste al contenedor */
+    margin-right: -26px; /* Compensa el margen lateral para que la línea se ajuste al contenedor */
+    margin-bottom: 0px;
+  }
+  .resumen .carrito h3 {
+    margin-top: 15px;
+    max-width: 200px;
+    margin-bottom: 0px; /* Ajusta el espacio entre el título y el precio */
+  }
+
+  .resumen .info-reserva{
+    margin-top: -15px;
+    margin-bottom: 0px; /* Elimina el margen inferior para evitar espacio adicional */
+  }
+
+  /* Estilos para el botón dentro del contenedor de resumen */
+  #btn-reservar {
+    background-color: #232f3e; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    padding: 10px 20px; /* Ajusta el espaciado interno */
+    font-size: 18px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 10px;
+    border: none;
+    display: inline-block; /* Muestra el botón en línea */
+    margin: 10px; /* Ajusta el margen según sea necesario */
+    white-space: nowrap;
+  }
+
+  #btn-reservar:hover {
+    background-color: #274b77;
+    color: white;
+  }
+  .fas.fa-shopping-cart {
+    font-size: 100px; /* Tamaño deseado del icono */
+    width: 100%; /* Ancho del icono al 100% del contenedor */
+  }

@@ -1,0 +1,177 @@
+
+<!-- Contenedor de FECHAS -->
+<div class="containerFecha">
+  <div class="date-container">
+    <h2>Check In</h2>
+    <input type="date" [min]="getCurrentDate()" [(ngModel)]="checkInDate" />
+  </div>
+  <div class="date-container">
+    <h2>Check Out</h2>
+    <input type="date" [min]="getCurrentDate()" [(ngModel)]="checkOutDate" />
+  </div>
+  <button id="btn-buscar" (click)="buscar()">Buscar</button>
+</div>
+
+<div class="clearfix"></div>
+
+
+<div class="containerPrincipal">
+
+  <!-- Sección de 1.Filtros -->
+<div class="filtro">
+   <!-- Filtro Número de Cantidad de Huéspedes -->
+<h3 for="cantidadHuespedes">Cantidad de Huéspedes</h3>
+<input type="number" id="cantidadHuespedes" min="1" placeholder="Ingrese la cantidad" [(ngModel)]="cantidadHuespedes" (ngModelChange)="buscar()" />
+<!-- Filtro Rango de Precio -->
+<h3 for="minPrecio">Rango de Precio</h3>
+<div class="precio-range">
+  <input type="number" id="minPrecio" placeholder="Min" [(ngModel)]="minPrecio" (ngModelChange)="buscar()" />
+  <span> - </span>
+  <input type="number" id="maxPrecio" placeholder="Max" [(ngModel)]="maxPrecio" (ngModelChange)="buscar()" />
+</div>
+    <!-- Filtro Tipo de Habitación -->
+  <h3 for="tipoHabitacion">Tipo de Habitación</h3>
+  <div class="tipo-habitacion-checkboxes">
+  <label>
+    <input type="checkbox" [(ngModel)]="tipoHabitacion.suite" (ngModelChange)="buscar()" />
+    Suite
+  </label>
+
+  <label>
+    <input type="checkbox" [(ngModel)]="tipoHabitacion.doble" (ngModelChange)="buscar()" />
+    Doble
+  </label>
+
+  <label>
+    <input type="checkbox" [(ngModel)]="tipoHabitacion.cuadruple" (ngModelChange)="buscar()" />
+    Cuádruple
+  </label>
+  <!-- Agrega más checkboxes según sea necesario -->
+  </div>
+  <!-- Filtro Tipo de Alojamiento -->
+  <h3>Tipo de Alojamiento</h3>
+  <div class="tipo-alojamiento-checkboxes">
+  <label>
+    <input type="checkbox" [(ngModel)]="tipoAlojamiento.casa" (ngModelChange)="buscar()" />
+    Casa
+  </label>
+
+  <label>
+    <input type="checkbox" [(ngModel)]="tipoAlojamiento.cabana" (ngModelChange)="buscar()" />
+    Cabaña
+  </label>
+  <!-- Agrega más checkboxes según sea necesario -->
+  </div>
+   <!-- Filtro Tipo de Cama -->
+  <h3>Tipo de Cama</h3>
+  <div class="tipo-cama-checkboxes">
+  <label>
+    <input type="checkbox" [(ngModel)]="tipoCama.extraGrande" (ngModelChange)="buscar()" />
+    Extra Grande
+  </label>
+
+  <label>
+    <input type="checkbox" [(ngModel)]="tipoCama.grande" (ngModelChange)="buscar()" />
+    Grande
+  </label>
+
+  <label>
+    <input type="checkbox" [(ngModel)]="tipoCama.individual" (ngModelChange)="buscar()" />
+    Individual
+  </label>
+  <!-- Agrega más checkboxes según sea necesario -->
+  </div>
+
+</div>
+
+
+
+  <!-- Sección de Resultados de Habitaciones -->
+  <div class="habitaciones">
+    <nav class="tarjetas" *ngFor="let habitacion of HabitacionesFiltradas; let i = index">
+      
+      <div class="habitacionImagen">
+        <img [src]="url + 'get-imagenhabitacion/' + habitacion.Imagen" />
+      </div>
+
+      <div class="informacion">
+
+        <h2>{{ habitacion.TipoAlojamiento }} {{ habitacion.TipoHabitacion }}</h2>
+        
+          <div class="split-info">
+          <div class="left-info">
+            <p>Precio por noche </p>
+              <h3 class="precio">${{ habitacion.Precio }}</h3>
+          </div>
+          <div class="right-info">
+            <p>Tipo de cama <br>{{ habitacion.TipoCamas }}</p>
+          </div>
+          </div>
+
+          <p class="capacidadmax">Capacidad máxima <br>{{ habitacion.CapacidadMaxima }}</p>
+          <div class="linea"></div>
+          <br>
+          <div class="split-info">
+            <div class="left-info" id="desayuno">
+              <div class="checkbox-container">
+                <input class="desayuno_box" type="checkbox" [(ngModel)]="habitacionesEstado[i].desayunoSeleccionado">
+              </div>
+              <div class="text-container">
+                <label class="infodsy">Desayuno</label>
+              </div>
+          </div>
+          <div class="right-info">
+            <div>
+            <p class="info">Adultos</p>
+            <p class="info">Niños</p>
+            </div>
+            <div>
+              <input class="parametros" type="number" id="adultos" [(ngModel)]="habitacionesEstado[i].adultos" min="0">
+              <input class="parametros" type="number" id="ninos" [(ngModel)]="habitacionesEstado[i].ninos" min="0">
+            </div>
+              
+
+          </div>
+          
+          </div >
+
+          <p *ngIf="!verificarCapacidadMaxima(i)">La cantidad de huéspedes excede la capacidad máxima de la habitación.</p>
+
+            <p></p>
+            <button class="boton-anadir" (click)="anadir(habitacion, i)" [disabled]="!anadirHabilitado(i) || !verificarCapacidadMaxima(i)">
+              Añadir habitación
+            </button>            <p></p>
+      </div>
+    </nav>
+  </div>
+
+
+  <div class="resumen">
+    <div class="icono-carrito" style="margin-bottom: 25px;">
+      <i class="fas fa-shopping-cart" style="font-size: 50px"></i>
+    </div>
+
+    <div class="linea"></div>
+
+    <div *ngFor="let reserva of carrito" class="carrito">
+      <!-- Título arriba de la imagen -->
+      <h3>{{ reserva.tipoAlojamiento }} {{ reserva.tipoHabitacion }} para {{ reserva.numAdultos }} Adultos y {{ reserva.numNinos }} Niños</h3>
+      <img [src]="url + 'get-imagenhabitacion/' + reserva.imagen" alt="Imagen de Habitación">
+      <div class="info-reserva">
+        <!-- Precio abajo de la imagen -->
+        <h1>${{ reserva.precioTotal }}</h1>
+      </div>
+      <div class="linea"></div>
+
+    </div>
+    <div class="subtotal">
+      <p>Subtotal<p>
+      <h3>US${{ calcularSubtotal() }}</h3> <!-- Aquí muestra el subtotal calculado -->
+    </div>
+    <button id="btn-reservar" type="button" (click)="enviarDatos()">RESERVAR AHORA</button>
+
+  </div>
+
+
+</div>
+

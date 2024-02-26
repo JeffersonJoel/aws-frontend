@@ -1,0 +1,101 @@
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f9fa; /* Color de fondo del cuadro */
+  border-radius: 15px; /* Bordes circulares */
+  box-shadow: 0 0 10px #16263a; /* Sombra con suavidad */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: block;
+  text-align: center;
+  
+
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label{
+ color:#1c334e;
+}
+
+.btn-primary{
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  margin: 0 auto;
+ }
+
+ .btn-primary:hover{
+  background-color:#1c334e;
+  color: #fff;
+ }
+
+.reservacion {
+  padding: 20px;
+  background-color: #f7f9fa; /* Color de fondo del cuadro */
+  border-radius: 15px; /* Bordes circulares */
+  box-shadow: 0 0 10px #16263a; /* Sombra con suavidad */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  max-width: 500px; /* Ancho máximo del contenedor */
+  margin-bottom: 30px;
+}
+
+
+
+.form-group input{
+  display: flex;
+  margin: 0 auto;
+}
+
+#info h3,
+#reserva h3,
+#precio h3 {
+  margin-top: 0;
+  color: #007bff; /* Color del título */
+}
+
+#info p,
+#reserva p,
+#precio p {
+  margin: 5px 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc; /* Línea divisoria entre secciones */
+  margin: 20px 0; /* Espacio entre secciones */
+}
+
+#reserva img{
+  width: 300px;
+  height: auto; 
+  border-radius: 35px;
+  margin-left: 100px;
+}
+
+.reserva-item {
+  width: 100%; /* Puedes ajustar el ancho según tus necesidades */
+  margin-bottom: 20px;
+  border: 2px solid white; /* Establece el borde blanco */
+  border-radius: 8px; /* Ajusta según sea necesario para esquinas redondeadas */
+  overflow: hidden; /* Asegura que las esquinas redondeadas se apliquen correctamente */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar el cuadro */
+  padding: 10px 0px 10px 0px;
+}
+
+
+.reserva-info{
+ margin-left: 10px;
+}
+
+.reserva-precios{
+margin-left: 10px;
+}

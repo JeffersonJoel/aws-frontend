@@ -1,0 +1,156 @@
+@media only screen and (min-width: 901px) and (max-width: 1280px){
+    .finalizar {
+        width: 750px;
+        margin-top: 50px;
+      }
+
+      .fa-solid {
+        font-size: 35px;
+      }
+      
+      h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+        
+      }
+      
+      h2 {
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+      
+      h3 {
+        margin-bottom: 5px;
+      }
+      
+      h4{
+        font-size: 15px;
+      }
+      /* Estilos para cada sección */
+      
+    .reserva-info h4{
+      font-size: 15px;        
+    }
+    
+    .reserva-precios h4{
+     font-size: 15px;
+    }
+    
+      #pago h3 {
+        font-size: 15px;
+      }
+      
+      #reservacion img {
+        width: 250px;
+      }
+      
+      .paypal-button-container {
+        width: 300px; /* Puedes ajustar el ancho según tus necesidades */        
+    }
+}
+
+/*-----------------------------------------------601 a 900------------------------------------------*/
+
+@media only screen and (min-width: 601px) and (max-width: 900px){
+    .finalizar {
+        width: 550px;
+        margin-top: 35px;
+      }
+
+      .fa-solid {
+        font-size: 25px;
+      }
+      
+      h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        
+      }
+      
+      h2 {
+        font-size: 15px;
+        margin-bottom: 5px;
+      }
+      
+      h4{
+        font-size: 12px;
+      }
+      /* Estilos para cada sección */
+      
+    .reserva-info h4{
+      font-size: 12px;        
+    }
+    
+    .reserva-precios h4{
+     font-size: 12px;
+    }
+    
+      #pago h3 {
+        font-size: 12px;
+      }
+      
+      #reservacion img {
+        width: 200px;
+      }
+      
+      .paypal-button-container {
+        width: 200px; /* Puedes ajustar el ancho según tus necesidades */        
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    .finalizar {
+        width: 300px;
+        margin-top: 15px;
+      }
+
+      .fa-solid {
+        font-size: 18px;
+      }
+      
+      h1 {
+        font-size: 15px;
+        margin-bottom: 10px;
+        margin-top: -12px;
+        
+      }
+      
+      h2 {
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
+      
+      h4{
+        font-size: 8px;
+      }
+      /* Estilos para cada sección */
+      
+    .reserva-info h4{
+      font-size: 8px;        
+    }
+    
+    .reserva-precios h4{
+     font-size: 8px;
+    }
+
+    .reserva-precios{
+        text-align: right;
+       }
+    
+      #pago h3 {
+        text-align: right;
+        font-size: 8px;
+      }
+      
+      #reservacion img {
+        width: 100px;
+      }
+      
+      .paypal-button-container {
+        margin-top: 12px;
+        width: 200px; /* Puedes ajustar el ancho según tus necesidades */ 
+               
+    }
+
+}
